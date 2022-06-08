@@ -35,7 +35,7 @@ CREATE TABLE `dc_artist` (
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `dc_artistalias` (
+CREATE TABLE `dc_artistAlias` (
   `id` int NOT NULL,
   `idArtistDC` int DEFAULT NULL,
   `idArtist` int DEFAULT NULL,
@@ -48,7 +48,7 @@ CREATE TABLE `dc_artistalias` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `dc_artistvariation`
+-- Table structure for table `dc_artistVariation`
 --
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -125,7 +125,7 @@ CREATE TABLE `dc_release` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `dc_release_id_uindex` (`id`),
   KEY `dc_release_idDC_index` (`idDC`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -134,7 +134,7 @@ CREATE TABLE `dc_release` (
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `dc_releaseartist` (
+CREATE TABLE `dc_releaseArtist` (
   `id` int NOT NULL,
   `idArtist` int DEFAULT NULL,
   `idArtistDC` int DEFAULT NULL,
@@ -165,7 +165,7 @@ CREATE TABLE `dc_releaseartist` (
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `dc_releaseextraartist` (
+CREATE TABLE `dc_releaseExtraArtist` (
   `id` int NOT NULL,
   `idArtist` int DEFAULT NULL,
   `idArtistDC` int DEFAULT NULL,
@@ -191,7 +191,7 @@ CREATE TABLE `dc_releaseextraartist` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `dc_releaseformat`
+-- Table structure for table `dc_releaseFormat`
 --
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -213,7 +213,7 @@ CREATE TABLE `dc_releaseformat` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `dc_releasegenre`
+-- Table structure for table `dc_releaseGenre`
 --
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -235,7 +235,7 @@ CREATE TABLE `dc_releasegenre` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `dc_releaselabel`
+-- Table structure for table `dc_releaseLabel`
 --
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -258,7 +258,7 @@ CREATE TABLE `dc_releaselabel` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `dc_releasestyle`
+-- Table structure for table `dc_releaseStyle`
 --
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -280,7 +280,7 @@ CREATE TABLE `dc_releasestyle` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `dc_releasetrack`
+-- Table structure for table `dc_releaseTrack`
 --
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
